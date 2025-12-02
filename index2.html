@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+            position: relative;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px; /* fixed (was heigth:10px) */
+            background-color: lightgreen;
+            margin: 20px;
+            position: relative;
+        }
+        .box3 {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            margin: 10px;
+            position: relative;
+            z-index: 4;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label>Name: </label>
+        <input type="text" required placeholder="Enter your fullname"><br>
+
+        <label>Email: </label>
+        <input type="email"><br>
+
+        <label>Password: </label>
+        <input type="password"><br>
+
+        <label>Age: </label>
+        <input type="number"><br>
+
+        <label><input type="radio" name="gender" value="male"> Male</label><br>
+        <label><input type="radio" name="gender" value="female"> Female</label><br>
+
+        <button type="submit">Submit</button><br>
+    </form>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+</body>
+</html>
